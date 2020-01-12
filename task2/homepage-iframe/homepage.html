@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="resources/css/homepage_style.css">
+   <script src="resources/js/homepage_code.js"></script>
+   <title>Home page</title>
+</head>
+
+<body onload="clock();">
+   <div class="wrapper">
+      <div class="header">
+         <div class="logo">
+            <span id="first-word">Red</span>
+            <span id="second-word">W!ngs</span>
+            <img src="resources/css/img/logo.png">
+         </div>
+         <div class="navigation_bar">
+            <input type="checkbox" id="main_menu" />
+            <label for="main_menu" id="main_menu_icon">menu &#9776 </label>
+            <div class="navigation_bar_container">
+               <div class="menu_item">
+                  <input type="checkbox" id="book_manage" />
+                  <img src="resources/css/img/plane.png" class="plane_icon">
+                  <label for="book_manage">Book & manage</label>
+                  <ul>
+                     <li onclick="loadInfo('Flights')"><a href="#">Flights</a></li>
+                     <li onclick="loadInfo('Timetable & flight status')"><a href="#">Timetable & flight status</a></li>
+                     <li onclick="loadInfo('Cancellation & refund')"><a href="#">Cancellation & refund</a></li>
+                  </ul>
+               </div>
+               <div class="menu_item">
+                  <input type="checkbox" id="trip_info" />
+                  <img src="resources/css/img/plane.png" class="plane_icon">
+                  <label for="trip_info">Trip information</label>
+                  <ul>
+                     <li onclick="loadInfo('Check-in')"><a href="#">Check-in</a></li>
+                     <li onclick="loadInfo('Baggage')"><a href="#">Baggage</a></li>
+                     <li onclick="loadInfo('Travel classes')"><a href="#">Travel classes</a></li>
+                  </ul>
+               </div>
+               <div class="menu_item">
+                  <input type="checkbox" id="comp_fleet" />
+                  <img src="resources/css/img/plane.png" class="plane_icon">
+                  <label for="comp_fleet">Company fleet</label>
+                  <ul>
+                     <li onclick="loadContent('resources/pages/page1/boeing.html')"><a href="#">Boeing planes</a></li>
+                     <li onclick="loadContent('resources/pages/page2/airbus.html')"><a href="#">Airbus planes</a></li>
+                     <li onclick="loadContent('resources/pages/page3/sukhoi.html')"><a href="#">Sukhoi planes</a></li>
+                  </ul>
+               </div>
+            </div>   
+         </div>
+      </div>
+
+      <div class="out_cont">
+         <div id="output_div" class="out"></div>
+      </div>
+
+      <footer class="footer">
+         <div class="foot-wrap">
+            <div class="inf-time">
+               <div class="info" id="signature">
+                  <span>created by astashou andrei</span>
+               </div>
+
+               <div class="info">
+                  <span id="currentTime"></span>
+                  <span id="currentDate"></span>
+               </div>
+            </div>
+            <div class="refs" id="refs">
+               <a href="https://twitter.com" target="_blank" title="@twitter"><img src="resources/css/img/twitter.svg"
+                     width="12" height="12" alt="twitter"></a>
+               <a href="https://www.linkedin.com" target="_blank" title="@linkedin"><img
+                     src="resources/css/img/linkedin.svg" width="12" height="12" alt="linkedin"></a>
+               <a href="https://www.skype.com/" target="_blank" title="skype"><img src="resources/css/img/skype.svg"
+                     width="12" height="12" alt="skype"></a>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>

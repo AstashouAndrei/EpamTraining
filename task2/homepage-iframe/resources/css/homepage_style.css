@@ -1,0 +1,148 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(95, 100, 107);
+    height: 100%;
+    width: 100%;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+
+.header {
+    height: 70px;
+    margin: 0 auto;
+    background-color: #2D3238;
+}
+
+.logo {
+    float: left;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#first-word {
+    color: #CE2B3A;
+}
+
+#second-word {
+    color: #2196F3;
+}
+
+#main_menu_icon {
+    color: #CE2B3A;
+    font-size: 30px;
+    padding-right: 120px;
+}
+
+.navigation_bar {
+    float: right;
+    line-height: 25px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.menu_item {
+    font-size: 20px;
+    color: #2196F3;
+}
+
+.navigation_bar_container,
+.menu_item ul,
+.navigation_bar input[type="checkbox"] {
+    display: none;
+}
+
+#main_menu:checked~.navigation_bar_container,
+.menu_item input:checked~ul {
+    display: block;
+}
+
+.navigation_bar ul,
+.navigation_bar li,
+label {
+    list-style-type: none;
+}
+
+.navigation_bar li a {
+    font-size: 17px;
+    color: #f0c22c;
+    text-decoration: none;
+}
+
+.plane_icon {
+    width: 15px;
+    margin: 12px 1em 0 2em;
+}
+
+.menu_item input+.plane_icon {
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+.menu_item input:checked+.plane_icon {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+label:hover,
+a:hover {
+    color: #747f85;
+    cursor: pointer;
+}
+
+.out {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 25px;
+    overflow: hidden;
+    color: #2196F3;
+}
+
+.footer {
+    position: fixed;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2D3238;
+    color: #909797;
+}
+
+.foot-wrap {
+    margin-top: 5px;
+}
+
+.info {
+    display: inline;
+}
+
+#currentTime,
+#currentDate {
+    margin-top: 20px;
+    float: right;
+    margin-right: 15px;
+}
+
+#signature {
+    margin-left: 15px;
+}
+
+.refs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    margin-left: 15px;
+    padding: 5px 0;
+}
