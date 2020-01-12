@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AirlineSPA">
+    <output-path>$PROJECT_DIR$/out/artifacts/AirlineSPA</output-path>
+    <root id="archive" name="AirlineSPA.war">
+      <element id="artifact" artifact-name="AirlineSPA:Web exploded" />
+    </root>
+  </artifact>
+</component>
