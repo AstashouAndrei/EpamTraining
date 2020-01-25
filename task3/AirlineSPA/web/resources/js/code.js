@@ -20,6 +20,12 @@ let regUserConfPass = document.getElementById('register-confpassword');
 let passwordRegX = /^([a-z0-9]{3,10})$/;
 let emailRegX = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,5})$/;
 
+let inputsForms = document.getElementsByClassName('form-control inputbox');
+
+for(let i=0; i<inputsForms.length; i++) {
+    inputsForms[i].onclick = hideError;
+}
+
 document.querySelector('.registerlink').addEventListener('click', function () {
     loginContainer.style.display = 'none';
     registrationContainer.style.display = 'block';
@@ -133,6 +139,11 @@ function showError(inputForm, message) {
 function showSuccess(inputForm) {
     let formControl = inputForm.parentElement;
     formControl.className = 'form-group success';
+}
+
+function hideError() {
+    let form = this.parentElement;
+    form.className = 'form-group';
 }
 
 function callServlet(data) {
