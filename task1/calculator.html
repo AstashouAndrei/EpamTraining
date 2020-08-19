@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="calculator_style.css">
+   <script src="calculator_code.js"></script>
+   <title>Calculator</title>
+</head>
+
+<body>
+   <div class="calc-case">
+      <div class="screen">
+         <form>
+            <input type="text" id="calc-screen" class="calc-screen" readonly>
+         </form>
+      </div>
+      <div class="buttons-body">
+         <div class=buttons>
+            <button type="button" class="operation clear" onclick="pressClearButton()">C</button>
+            <button type="button" class="operation" onclick="pressBackButton()">←</button>
+            <button type="button" class="operation" onclick="pressPlusMinusButton()">±</button>
+            <button type="button" class="operation" onclick="pressOperationButton('/')">÷</button>
+         </div>
+         <div class=buttons>
+            <button type="button" class="digit" onclick="pressDigitButton(7)">7</button>
+            <button type="button" class="digit" onclick="pressDigitButton(8)">8</button>
+            <button type="button" class="digit" onclick="pressDigitButton(9)">9</button>
+            <button type="button" class="operation" onclick="pressOperationButton('*')">*</button>
+         </div>
+         <div class=buttons>
+            <button type="button" class="digit" onclick="pressDigitButton(4)">4</button>
+            <button type="button" class="digit" onclick="pressDigitButton(5)">5</button>
+            <button type="button" class="digit" onclick="pressDigitButton(6)">6</button>
+            <button type="button" class="operation" onclick="pressOperationButton('-')">-</button>
+         </div>
+         <div class=buttons>
+            <button type="button" class="digit" onclick="pressDigitButton(1)">1</button>
+            <button type="button" class="digit" onclick="pressDigitButton(2)">2</button>
+            <button type="button" class="digit" onclick="pressDigitButton(3)">3</button>
+            <button type="button" class="operation" onclick="pressOperationButton('+')">+</button>
+         </div>
+         <div class=buttons>
+            <button type="button" class="zero" onclick="pressDigitButton(0)">0</button>
+            <button type="button" class="operation" onclick="pressOperationButton('=')">=</button>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
